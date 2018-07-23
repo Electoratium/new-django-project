@@ -17,7 +17,6 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-babel": "^7.0.1",
     "gulp-cached": "^1.1.1",
-    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-eslint": "^5.0.0",
     "gulp-jsmin": "^0.1.5",
