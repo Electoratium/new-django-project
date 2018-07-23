@@ -1,0 +1,18 @@
+если на продакшн то необходимо устновить в pg_sheets или как то так
+    postgres all md5(а не peer)
+и пароль сделать постгресу
+
+НЕ ДОЖНЫ ПОЛЬЗОВАТЕЛИ И БД быть с большой буквы!!
+-- Postgres --
+sudo su -postgres
+
+psql
+postgres
+
+
+CREATE USER test_user WITH PASSWORD 'test_user';
+CREATE DATABASE dbname;
+GRANT ALL PRIVILEGES ON DATABASE dbname TO test_user;
+
+Проверка
+psql -h localhost dbname test_user

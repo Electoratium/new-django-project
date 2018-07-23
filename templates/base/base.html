@@ -1,0 +1,30 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+        <link rel="stylesheet" href="{% static 'lib/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'lib/css/normalize.min.css' %}">
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        {% include 'base/header.html' %}
+
+        {% block content %}
+        {% endblock %}
+
+
+
+
+        <script src="{% static 'lib/js/jquery.min.js' %}"></script>
+        <script src="{% static 'lib/js/popper.min.js' %}"></script>
+        <script src="{% static 'lib/js/bootstrap.min.js' %}"></script>
+        {% block scripts %}
+        {% endblock %}
+    </body>
+</html>
